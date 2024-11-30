@@ -16,6 +16,7 @@ The selected model is instantiated with Ollama from the langchain_community.llms
     "Mistral": Ollama(model="mistral", base_url="http://127.0.0.1:11434"),  # Replace with actual Mistral API if available
         }
 
+______________________
 
 2. Embedding and Vector Store
 ------------------------------
@@ -35,6 +36,7 @@ The selected model is instantiated with Ollama from the langchain_community.llms
     persist_directory = r"C:\Users\PC\anaconda3\envs\rag_env\Lib\site-packages\chromadb"
     vector_store = Chroma(persist_directory=persist_directory, embedding_function = embed_model)
 
+______________________
 
 3. Document Processing
 -----------------------
@@ -42,6 +44,8 @@ PDFs are uploaded and processed using:
 PyPDFLoader: Loads content from PDF files.
 RecursiveCharacterTextSplitter: Splits documents into chunks of 500 characters for indexing.
 Processed chunks are added to the Chroma vector store.
+
+______________________
 
 4. Retrieval-Augmented Generation (RAG) Chain
 ----------------------------------------------
@@ -68,6 +72,7 @@ Processed chunks are added to the Chroma vector store.
         template=custom_qa_prompt("{input}", "{context}")
     )
 
+______________________
 
 5. Streamlit Interface
 ----------------------

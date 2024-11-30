@@ -2,6 +2,7 @@
 Usage
 =====
 
+______________________
 
 1. **Upload a PDF Document**
 Click on the "Upload your PDF" button to upload a file.

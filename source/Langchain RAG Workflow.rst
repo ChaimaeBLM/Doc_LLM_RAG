@@ -1,6 +1,8 @@
 LangChain RAG Workflow
 =======================
 
+______________________
+
 Step 1: LLM Initialization
 --------------------------
 The user selects an LLM `Llama3 or Mistral` via the Streamlit dropdown.

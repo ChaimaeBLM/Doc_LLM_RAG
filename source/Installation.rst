@@ -6,6 +6,8 @@ Prerequisites
 * Python 3.8 +
 * Virtual Environment
 
+______________________
+
 Steps to Install Dependencies
 -----------------------------
 
