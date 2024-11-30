@@ -9,7 +9,7 @@ Two options are provided: Llama3 and Mistral.
 The user selects the model via a dropdown menu.
 The selected model is instantiated with Ollama from the langchain_community.llms module.
 
-.. highlight:: python
+.. code-block:: python
 
     llm_options = {
     "Llama3": Ollama(model="llama3", base_url="http://127.0.0.1:11434"),
@@ -21,7 +21,7 @@ The selected model is instantiated with Ollama from the langchain_community.llms
 ------------------------------
 **Embedding Model:** OllamaEmbeddings generates vector embeddings for storing and retrieving document chunks.
 
-.. highlight:: python
+.. code-block:: python
 
     embed_model = OllamaEmbeddings(
     model =selected_llm_name.split()[0].lower(),
@@ -30,7 +30,7 @@ The selected model is instantiated with Ollama from the langchain_community.llms
 
 **Vector Store:** Chroma is used to store processed document embeddings persistently.
 
-.. highlight:: python
+.. code-block:: python
 
     persist_directory = r"C:\Users\PC\anaconda3\envs\rag_env\Lib\site-packages\chromadb"
     vector_store = Chroma(persist_directory=persist_directory, embedding_function = embed_model)
@@ -47,14 +47,14 @@ Processed chunks are added to the Chroma vector store.
 ----------------------------------------------
 **Retriever:** Fetches relevant documents from the vector store using similarity search.
 
-.. highlight:: python
+.. code-block:: python
 
     retriever = vector_store.as_retriever(search_kwargs={"k":5})
 
 
 **QA Chain:** Combines retrieved documents with the input query to generate context-aware answers using the selected LLM.
 
-.. highlight:: python
+.. code-block:: python
 
     def custom_qa_prompt(context,input):
     if context:
@@ -68,7 +68,7 @@ Processed chunks are added to the Chroma vector store.
         template=custom_qa_prompt("{input}", "{context}")
     )
 
-    
+
 5. Streamlit Interface
 ----------------------
 File Uploader: Handles PDF uploads.

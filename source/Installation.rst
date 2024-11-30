@@ -11,7 +11,7 @@ Steps to Install Dependencies
 
 1. Clone the github repository:
 
-.. highlight:: python
+.. code-block:: python
 
     git clone https://github.com/ChaimaeBLM/Doc_LLM_RAG
     cd Doc_LLM_RAG
