@@ -2,6 +2,10 @@
 Usage
 =====
 
+.. image:: source/images/app_interface.png
+   :alt: interface
+   :align: center
+
 ______________________
 
 1. **Upload a PDF Document**
