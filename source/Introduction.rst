@@ -13,9 +13,10 @@ What exactly is RAG?
 ---------------------
 RAG, or Retrieval Augmented Generation, is a technique that enhances LLMs by integrating additional data sources. A typical RAG application involves:
 
-* **Indexing ** - a pipeline for ingesting data from a source and indexing it, which usually consists of Loading, Splitting and Storing the data in ChromaDb.
+* **Indexing** - a pipeline for ingesting data from a source and indexing it, which usually consists of Loading, Splitting and Storing the data in ChromaDb.
 
 * **Retrieval and generation** - At runtime, RAG processes the user's query, fetches relevant data from the index stored in ChromaDb, and the LLM generates a response based on this enriched context.
+
 
 Key Technologies Used 
 ----------------------
@@ -36,6 +37,7 @@ Meta touts Llama 3 as one of the best open models available, but it is still und
    :align: center
 
 
+______________________
 
 🦜️🔗 LangChain
 ^^^^^^^^^^^^^^^^
@@ -59,6 +61,7 @@ For these applications, LangChain simplifies the entire application lifecycle:
 
 Productionization:
 * **LangSmith:** A developer platform that lets you debug, test, evaluate, and monitor chains built on any LLM framework and seamlessly integrates with LangChain.
+______________________
 
 Streamlit
 ^^^^^^^^^^
