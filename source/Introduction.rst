@@ -5,16 +5,15 @@ Welcome to the documentation for the RAG (Retrieval-Augmented Generation) applic
 This application leverages LangChain, Streamlit, Mistral, and Llama3 through Ollama to provide 
 an interactive platform for testing and exploring language models and retrieval-augmented generation workflows.
 
-.. image:: source/images/schema.png
+.. image:: images/schema.png
    :alt: Example image showing the application flow
    :align: center
-
 
 What exactly is RAG?
 ---------------------
 RAG, or Retrieval Augmented Generation, is a technique that enhances LLMs by integrating additional data sources. A typical RAG application involves:
 
-* **Indexing **- a pipeline for ingesting data from a source and indexing it, which usually consists of Loading, Splitting and Storing the data in ChromaDb.
+* **Indexing ** - a pipeline for ingesting data from a source and indexing it, which usually consists of Loading, Splitting and Storing the data in ChromaDb.
 
 * **Retrieval and generation** - At runtime, RAG processes the user's query, fetches relevant data from the index stored in ChromaDb, and the LLM generates a response based on this enriched context.
 
@@ -32,7 +31,7 @@ allowing you to download and use LLMs quickly and effectively with just a single
 of tasks, including generating text, translating languages, writing different kinds of creative content, and answering your questions in an informative way. 
 Meta touts Llama 3 as one of the best open models available, but it is still under development.
 
-.. image:: source/images/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ax9r9z2w2zghv81grbh7.png
+.. image:: images/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ax9r9z2w2zghv81grbh7.png
    :alt: Mistral vs llama3
    :align: center
 
