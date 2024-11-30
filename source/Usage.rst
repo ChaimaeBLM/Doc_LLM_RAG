@@ -2,7 +2,7 @@
 Usage
 =====
 
-.. image:: source/images/app_interface.png
+.. image:: images/app_interface.png
    :alt: interface
    :align: center
 
