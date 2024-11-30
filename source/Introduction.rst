@@ -5,7 +5,7 @@ Welcome to the documentation for the RAG (Retrieval-Augmented Generation) applic
 This application leverages LangChain, Streamlit, Mistral, and Llama3 through Ollama to provide 
 an interactive platform for testing and exploring language models and retrieval-augmented generation workflows.
 
-.. image:: source\images\schema.png
+.. image:: source/images/schema.png
    :alt: Example image showing the application flow
    :align: center
 
@@ -32,7 +32,7 @@ allowing you to download and use LLMs quickly and effectively with just a single
 of tasks, including generating text, translating languages, writing different kinds of creative content, and answering your questions in an informative way. 
 Meta touts Llama 3 as one of the best open models available, but it is still under development.
 
-.. image:: source\images\https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ax9r9z2w2zghv81grbh7.png
+.. image:: source/images/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ax9r9z2w2zghv81grbh7.png
    :alt: Mistral vs llama3
    :align: center
 
@@ -45,22 +45,20 @@ LangChain is a framework for developing applications powered by large language m
 For these applications, LangChain simplifies the entire application lifecycle:
 
 * **Open-source libraries:** Build your applications using LangChain's open-source building blocks, components, and third-party integrations. Use LangGraph to build stateful agents with first-class streaming and human-in-the-loop support.
-Productionization: Inspect, monitor, and evaluate your apps with LangSmith so that you can constantly optimize and deploy with confidence.
+
+* **Productionization:** Inspect, monitor, and evaluate your apps with LangSmith so that you can constantly optimize and deploy with confidence.
 
 * **Deployment:** Turn your LangGraph applications into production-ready APIs and Assistants with LangGraph Cloud.
-Open-source libraries
 
 * **langchain-core:** Base abstractions and LangChain Expression Language.
 
-* **langchain-community:** Third party integrations.
-Some integrations have been further split into partner packages that only rely on langchain-core. Examples include langchain_openai and langchain_anthropic.
+* **langchain-community:** Third party integrations.Some integrations have been further split into partner packages that only rely on langchain-core. Examples include langchain_openai and langchain_anthropic.
 
 * **langchain:** Chains, agents, and retrieval strategies that make up an application's cognitive architecture.
 
 * **LangGraph:** A library for building robust and stateful multi-actor applications with LLMs by modeling steps as edges and nodes in a graph. Integrates smoothly with LangChain, but can be used without it. To learn more about LangGraph, check out our first LangChain Academy course, Introduction to LangGraph, available here.
 
-*Productionization:
-
+Productionization:
 * **LangSmith:** A developer platform that lets you debug, test, evaluate, and monitor chains built on any LLM framework and seamlessly integrates with LangChain.
 
 Streamlit
