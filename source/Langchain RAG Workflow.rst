@@ -5,7 +5,7 @@ ______________________
 
 Step 1: LLM Initialization
 --------------------------
-The user selects an LLM `Llama3 or Mistral` via the Streamlit dropdown.
+The user selects an LLM `Llama3 or Mistral or AceGPT:7b` via the Streamlit dropdown.
 The app initializes the selected model using Ollama.
 
 Step 2: PDF Upload and Chunking

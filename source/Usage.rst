@@ -2,7 +2,7 @@
 Usage
 =====
 
-.. image:: images/app_interface.png
+.. image:: images/APPInter.png
    :alt: interface
    :align: center
 
@@ -13,7 +13,7 @@ Click on the "Upload your PDF" button to upload a file.
 Supported file types: PDF.
 The app processes the uploaded file by splitting it into chunks and storing it in the vector store (Chroma).
 
-2. **Choose an LLM** (llama3 / mistral)
+2. **Choose an LLM** (llama3 / mistral /AceGPT:7b) ,AceGPT:7b was finetuned on arabic content.
 3. **Ask Questions**
 Enter your question in the text input field.
 Click the "Get answer" button to generate a response.

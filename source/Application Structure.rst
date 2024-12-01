@@ -13,8 +13,9 @@ The selected model is instantiated with Ollama from the langchain_community.llms
 
     llm_options = {
     "Llama3": Ollama(model="llama3", base_url="http://127.0.0.1:11434"),
-    "Mistral": Ollama(model="mistral", base_url="http://127.0.0.1:11434"),  # Replace with actual Mistral API if available
-        }
+    "Mistral": Ollama(model="mistral", base_url="http://127.0.0.1:11434"), 
+    "salmatrafi/acegpt:7b": Ollama(model="salmatrafi/acegpt:7b", base_url="http://127.0.0.1:11434"),
+     }
 
 ______________________
 
